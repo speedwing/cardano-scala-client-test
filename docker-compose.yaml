@@ -87,6 +87,14 @@ services:
         max-size: "200k"
         max-file: "10"
 
+secrets:
+  postgres_db:
+    file: ./config/secrets/postgres_db
+  postgres_password:
+    file: ./config/secrets/postgres_password
+  postgres_user:
+    file: ./config/secrets/postgres_user
+
 volumes:
   node-ipc:
   node-config:
